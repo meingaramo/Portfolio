@@ -1,0 +1,546 @@
+/* Version Mobile */
+@font-face {
+    font-family: Kolgar;
+    src: url(./Fonts/Kolgar.ttf) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: Senmoly;
+    src: url(./Fonts/Senmoly\ Caligan.ttf);
+}
+/* *{
+    border: solid 2px #ff0000;
+} */
+
+h1{
+    font-family: Kolgar;
+    font-style: normal;
+    font-variant-alternates: on;
+    font-feature-settings:
+        "liga" 0,
+        "salt" 1,
+        "ss01" 1;
+}
+
+h2{
+    font-family: Senmoly;
+    font-optical-sizing: auto;
+    font-size: 25px;
+    margin-left: 30px;
+}
+h3{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 10px;
+}
+h4{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 9px;
+}
+p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+h6{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.grid-index{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "imagen texto" /*imagenes - text-overlay */ /*educacion*/ 
+    "scroll scroll" /*scroll*/ /*experiencia de trabajo */
+    "perfil perfil" /*perfil-contenedor */ /*experiencia de trabajo */
+    "contacto contacto" /* imagen-contenedor */ /* skill idioma interes */
+    "footer footer";
+    background-color: #ffd07b;
+    background-image: url(./Imagenes/fondo-1.png);
+    background-blend-mode: multiply;
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;  
+    align-items: flex-end;
+}
+.header div{
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+}
+.header div img{
+    width: auto;
+    height: 13px;
+}
+.header div h1{
+    font-size: 10px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}
+.nav ul{
+    list-style-type: none;
+}
+.nav ul li a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 7px;
+    padding: 4px;
+    text-decoration: none;
+}
+
+/* INDEX */
+
+#imagenes{
+    grid-area: imagen;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 70vw;
+}
+.grafico{
+    display: none;
+    color: #ffffff;
+}
+.emilia{
+    overflow: hidden;
+    height: 600px;
+    object-fit: cover;
+    object-position: 45% 100%;
+    border-top-right-radius: 150px;
+    border-top-left-radius: 150px;
+    transform: translateX(10%);
+    
+}
+.circulo-gusano{
+    position: absolute;
+    height: auto;
+    width: 150px;
+    top: 85%;
+    transform: translateX(-70%);
+    overflow: hidden;
+}
+.mancha{
+    position: absolute;
+    width: 45px;
+    top: 85%;
+    left: 48%;
+    z-index: 2;
+}
+#presentacion{
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    z-index: 1;
+    width: 25vw;
+    transform: translateX(-60%);
+}
+.text-overlay{
+    font-size: 140%;
+    transform: translateX(-20%);
+}
+#portfolio1{
+    color: #acb884;
+    margin-bottom: 10px;
+}
+#portfolio2{
+    color: #dfa36d;
+    margin-bottom: 10px;
+}
+#portfolio3{
+    color: #f2ebd7;
+}
+.estrella-circulo{
+    width: auto;
+    height: 50px;
+    margin-left: 65px;
+}
+.redeSociales{
+    height: auto;
+    width: max-content;
+    background-color: #f2ebd7;
+    padding: 10px 15px 10px 15px;
+    transform: translateY(40%);
+}
+.redeSociales p{
+    font-size: 11px;
+    line-height: 140%;
+}
+#scroll{
+    grid-area: scroll;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #acb884;
+    height: 80px;
+}
+#scroll img{
+    width: 60px;
+    height: 60px;
+}
+#scroll h3{
+    color: #f2ebd7;
+    font-weight: 600;
+    margin: 30px;
+}
+
+.perfil-contenedor {
+    background-color:#f2ebd7;
+    grid-area: perfil;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.perfil-contenedor img{
+    width: auto;
+    height: 100px;
+    padding-bottom: 15px;
+}
+.perfil-contenedor p{
+    max-width: 70vw;
+    font-size: 11px;
+    color: #000000;
+    text-align: center;
+}
+.imagen-contenedor {
+    grid-area: contacto;
+    background-color:#f2ebd7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-contenedor img{
+    width: 300px;
+}
+#boton-index{
+    background-color:#f2ebd7;
+}
+#boton-resume{
+    background-color:#b9cdd1;
+}
+.etiqueta-blanca{
+    background-color:#f2ebd7;
+    border-radius: 50px;
+    width: max-content;
+    height: max-content;
+    padding: 7px;
+}
+.etiqueta{
+    background-color: #dfa36d;
+    border-radius: 50px;
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+}
+#uno{
+    font-size: 10px;
+    color: #ffffff;
+    position: absolute;
+    transform: translate(10%, -700%);
+}
+#dos{
+    font-size: 10px;
+    color: #ffffff;
+    position: absolute;
+    transform: translate(-145%, -300%);
+}
+#info-contacto{
+    background-color: #ffd07b;
+    width: max-content;
+    height: max-content;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -5px;
+    padding: 10px 20px 10px 20px;
+}
+#info-contacto p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 11px;
+}
+#info-contacto span {
+    margin-right: 5px;
+}
+.footer-index{
+    grid-area: footer;
+    background-color: #f2ebd7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.footer-index a{
+    text-decoration: none;
+}
+.footer-index a img{
+    width: 35px;
+}
+/* fin INDEX */
+
+/* RESUME */
+.grid-resume{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "resume"
+    "educacion"
+    "experiencia"
+    "skills"
+    "idiomas"
+    "interes"
+    "footer";
+    background-color: #f2ebd7;
+}
+.resume{
+    grid-area: resume;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 100%;
+    margin-top: 30px;
+}
+#resume01{
+    color: #acb884;
+    margin-bottom: 10px;
+    transform: translateX(-50%);
+}
+#resume02{
+    color: #dfa36d;
+    margin-bottom: 10px;
+}
+#resume03{
+    color: #b9cdd1;
+    align-items: flex-end;
+    transform: translateX(50%);
+}
+.educacion{
+    grid-area: educacion;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.educacion-container{
+    display: flex;
+}
+.timeline{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    padding: 5px 5px 5px 30px;
+}
+.timeline-titulo{
+    margin-right: 8px;
+}
+.timeline-dot{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.timeline-dot hr{
+    height: 0,8px;
+    width: 62px;
+    margin-left: 5px;
+    background-color: #acb884;
+}
+.timeline-dot img{
+    width: 15px;
+}
+.experiencia{
+    grid-area: experiencia;
+    background-color: #acb884;
+    margin: 0px 35px 0px 35px;
+    padding: 20px;
+    height: max-content;
+    transform: translatey(10%);
+}
+.experiencia h2{
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.estrella-amarilla-exp{
+    position: absolute;
+    width: 50px;
+    transform: translateY(-200%);
+    margin-left: -40px;
+}
+.timeline-experiencia{
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: repeat(4,max-content);
+    margin-bottom: 20px;
+}
+.timeline-item-exp{
+    display: grid;
+    grid-template-columns: 30px 20px auto;
+} 
+.timeline-dot-exp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.timeline-dot-exp img{
+    width: 15px;
+    margin-bottom: 5px;
+}
+.timeline-dot-exp hr{
+    height: 25px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+    width: 0,8px;
+    background-color: #f2ebd7;
+}
+.timeline-year-exp{
+    color: #f2ebd7;
+}
+.orden-etiquetas{
+    display: flex;
+    justify-content: space-around;
+}
+
+.orden-etiquetas h6{
+    font-size: 6.8px;
+    font-weight: 600;
+    color: #919b68;
+}
+#fondo-azul{
+    background-color: #b9cdd1;
+}
+#skills{
+    grid-area: skills;
+    padding-top: 60px;
+}
+.habilidades{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    margin-left: 20px;
+}
+.habilidades h3{
+    color: #ffffff;
+}
+.software{
+    max-width: 40vw;
+    margin-left: 20px;
+}
+.etiqueta-amarilla{
+    display: flex;
+    justify-content: center; 
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.eti-amarilla{
+    background-color:#ffd07b;
+    font-size: 6.8px;
+    font-weight: 600;
+    border-radius: 50px;
+    width: max-content;
+    height: max-content;
+    padding: 7px;
+}
+#idiomas{
+    grid-area: idiomas;
+    padding-top: 30px;
+}
+#idiomas h3{
+    color: #ffffff;
+}
+.orden-idiomas{
+    display: flex;
+    justify-content: space-around;
+}
+.orden-idiomas div img{
+    width: 60px;
+    margin-top: 10px;
+}
+
+#intereses{
+    grid-area: interes;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.orden-iconos{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+.iconos img{
+    width: 45px;
+}
+.iconos h4{
+    text-align: center;
+}
+
+.footer-resume{
+    grid-area: footer;
+    background-color: #b9cdd1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.footer-resume a{
+    text-decoration: none;
+}
+.footer-resume a img{
+    width: 35px;
+}
+/* fin RESUME */
+
+
+/* FIN Version Mobile */
+
+
+
+
+
+
+
+
+/* version DESKTOP DE LA LINEA DE TIEMPO
+
+.timeline{
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: repeat(4,1fr);
+}
+.timeline-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+} */
