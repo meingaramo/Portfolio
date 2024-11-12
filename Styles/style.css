@@ -1,31 +1,27 @@
 /* Version Mobile */
 @font-face {
-    font-family: Kolgar;
-    src: url(../Fonts/Kolgar.ttf) format('woff2');
+    font-family: Barbra;
+    src: url(../Fonts/Barbra-High.otf) format('woff2');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
-    font-family: Senmoly;
-    src: url(../Fonts/Senmoly\ Caligan.ttf);
+    font-family: CHAVTER;
+    src: url(../Fonts/CHAVTER.ttf);
 }
 /* *{
     border: solid 2px #ff0000;
 } */
 
 h1{
-    font-family: Kolgar;
+    font-family: Barbra;
     font-style: normal;
-    font-variant-alternates: on;
-    font-feature-settings:
-        "liga" 0,
-        "salt" 1,
-        "ss01" 1;
+    letter-spacing: 1px;
 }
 
 h2{
-    font-family: Senmoly;
+    font-family: CHAVTER;
     font-optical-sizing: auto;
     font-size: 25px;
     margin-left: 30px;
@@ -87,8 +83,9 @@ h6{
     width: auto;
     height: 13px;
 }
-.header div h1{
+.header div h2{
     font-size: 10px;
+    margin-left: 2px;
 }
 .nav{
     display: flex;
