@@ -68,7 +68,7 @@ h6{
     "footer footer";
     background-color: #ffd07b;
     background-image: url(../Imagenes/fondo-1.png);
-    background-blend-mode: multiply;
+    /* background-blend-mode: multiply; */
 }
 
 .header{
@@ -460,15 +460,13 @@ h6{
 }
 .habilidades div h3{
     color: #ffffff;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 .software{
     max-width: 40vw;
     margin-left: 20px;
 }
-.software img{
-    margin-top: 5px;
-}
+
 .etiqueta-amarilla{
     display: flex;
     justify-content: center; 
