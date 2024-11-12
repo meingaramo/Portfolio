@@ -466,6 +466,9 @@ h6{
     max-width: 40vw;
     margin-left: 20px;
 }
+.software img{
+    margin-top: 5px;
+}
 .etiqueta-amarilla{
     display: flex;
     justify-content: center; 
