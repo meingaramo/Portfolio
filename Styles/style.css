@@ -535,6 +535,75 @@ h6{
 }
 /* fin RESUME */
 
+/* inicio TRABAJOS */
+.grid-trabajos{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "titulo"
+    "trabajos"
+    "footer";
+    background-color: #f2ebd7;
+}
+.titulo{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.titulo h1{
+    color: #dfa36d;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#boton-contacto{
+    background-color: #acb884;
+}
+.trabajos{
+    grid-area: trabajos;
+    display: grid;
+    grid-template-columns: max-content;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: #acb884;
+}
+.imagen-trabajo{
+    height: 300px;
+    width: 80vw;
+    object-fit: cover;
+    border-radius: 10px;
+    transform: translateY(-10%);
+    margin-bottom: 30px;
+    display: block;
+    box-shadow: 5px 8px 10px 0 #919b68; /* Sombra abajo de la imagen */
+}
+.link-behance{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+.link-behance a{
+    text-decoration: none;
+}
+.link-behance a h3{
+    transform: translateY(180%);
+    color: #000000;
+    text-align: right;
+    margin-right: 55px;
+}
+.link-behance img{
+    height: auto;
+    width: 200px;
+}
+#footer-trabajos{
+    grid-area: footer;
+    background-color: #acb884;
+}
+/* fin TRABAJOS */
+
 
 /* FIN Version Mobile */
 
