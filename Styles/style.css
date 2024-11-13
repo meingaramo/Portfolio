@@ -26,32 +26,28 @@ h2{
     font-size: 25px;
     margin-left: 30px;
 }
-h3{
+.texto-base{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
     font-style: normal;
-    font-size: 10px;
+}
+h3{
+    font-weight: 600;
+    font-size: 11px;
 }
 h4{
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
-    font-style: normal;
     font-size: 9px;
 }
 p{
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
+    font-size: 11px;
 }
 h6{
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 600;
+    font-size: 6.8px;
 }
+
 
 .grid-index{
     display: grid;
@@ -63,10 +59,7 @@ h6{
     "contacto contacto" /* imagen-contenedor */ /* skill idioma interes */
     "footer footer";
     background-color: #ffd07b;
-    background-image: url(../Imagenes/fondo-1.png);
-    /* background-blend-mode: multiply; */
 }
-
 .header{
     grid-area: header;
     display: flex;
@@ -97,7 +90,6 @@ h6{
     list-style-type: none;
 }
 .nav ul li a{
-    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 7px;
     padding: 4px;
@@ -188,7 +180,6 @@ h6{
     transform: translateY(40%);
 }
 .redeSociales p{
-    font-size: 11px;
     line-height: 140%;
 }
 #scroll{
@@ -207,7 +198,6 @@ h6{
 }
 #scroll h3{
     color: #f2ebd7;
-    font-weight: 600;
 }
 
 .perfil-contenedor {
@@ -227,7 +217,6 @@ h6{
 }
 .perfil-contenedor p{
     max-width: 70vw;
-    font-size: 11px;
     color: #000000;
     text-align: center;
 }
@@ -263,13 +252,11 @@ h6{
     padding: 10px;
 }
 #uno{
-    font-size: 10px;
     color: #ffffff;
     position: absolute;
     transform: translate(10%, -700%);
 }
 #dos{
-    font-size: 10px;
     color: #ffffff;
     position: absolute;
     transform: translate(-145%, -300%);
@@ -289,8 +276,6 @@ h6{
     margin: 5px 0;
     display: flex;
     align-items: center;
-    font-weight: 400;
-    font-size: 11px;
 }
 #info-contacto span {
     margin-right: 5px;
@@ -356,13 +341,13 @@ h6{
 .educacion-container{
     display: flex;
 }
-.timeline{
+#timeline{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     justify-content: space-between;
     padding: 5px 5px 5px 30px;
 }
-.timeline-titulo{
+#timeline-titulo{
     margin-right: 8px;
 }
 .timeline-dot{
@@ -401,7 +386,7 @@ h6{
     transform: translateY(-200%);
     margin-left: -40px;
 }
-.timeline-experiencia{
+#timeline-experiencia{
     display: grid;
     grid-template-columns: 1, 1fr;
     grid-template-rows: repeat(4,max-content);
@@ -430,17 +415,15 @@ h6{
     background-color: #f2ebd7;
     border: none;
 }
-.timeline-year-exp{
+.year{
     color: #f2ebd7;
 }
-.orden-etiquetas{
+#orden-etiquetas{
     display: flex;
     justify-content: space-around;
 }
 
 .orden-etiquetas h6{
-    font-size: 6.8px;
-    font-weight: 600;
     color: #919b68;
 }
 #fondo-azul{
@@ -450,23 +433,23 @@ h6{
     grid-area: skills;
     padding-top: 60px;
 }
-.habilidades{
+#habilidades{
     display: flex;
     flex-direction: row;
     column-gap: 50px;
     margin-left: 20px;
     margin-top: 10px;
 }
-.habilidades div h3{
+#habilidades div h3{
     color: #ffffff;
     margin-bottom: 10px;
 }
-.software{
+#software{
     max-width: 40vw;
     margin-left: 20px;
 }
 
-.etiqueta-amarilla{
+#etiqueta-amarilla{
     display: flex;
     justify-content: center; 
     margin-left: 5px;
@@ -474,8 +457,6 @@ h6{
 }
 .eti-amarilla{
     background-color:#ffd07b;
-    font-size: 6.8px;
-    font-weight: 600;
     border-radius: 50px;
     width: max-content;
     height: max-content;
@@ -489,12 +470,12 @@ h6{
 #idiomas h3{
     color: #ffffff;
 }
-.orden-idiomas{
+#orden-idiomas{
     display: flex;
     justify-content: space-around;
     margin-top: 5px;
 }
-.orden-idiomas div img{
+#orden-idiomas div img{
     width: 60px;
     margin-top: 10px;
 }
@@ -504,7 +485,7 @@ h6{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.orden-iconos{
+#orden-iconos{
     display: flex;
     justify-content: space-around;
     margin-left: 20px;
@@ -562,7 +543,7 @@ h6{
 #boton-contacto{
     background-color: #acb884;
 }
-.trabajos{
+#trabajos{
     grid-area: trabajos;
     display: grid;
     grid-template-columns: max-content;
