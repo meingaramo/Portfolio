@@ -14,10 +14,24 @@
     border: solid 2px #ff0000;
 } */
 
-h1{
+.titulo-pagina {
     font-family: Barbra;
     font-style: normal;
     letter-spacing: 1px;
+    font-size: 190%;
+    margin-bottom: 10px;
+}
+.color-verde{
+    color: #acb884;
+}
+.color-naranja{
+    color: #dfa36d;
+}
+.color-celeste{
+    color: #b9cdd1;
+}
+.color-beije{
+    color:#f2ebd7;
 }
 
 h2{
@@ -153,7 +167,6 @@ h6{
     transform: translateX(-60%);
 }
 .text-overlay{
-    font-size: 140%;
     transform: translateX(-20%);
 }
 #portfolio1{
@@ -315,20 +328,16 @@ h6{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 100%;
     margin-top: 30px;
 }
-#resume01{
-    color: #acb884;
+#verde-resume{
     margin-bottom: 10px;
     transform: translateX(-50%);
 }
-#resume02{
-    color: #dfa36d;
+#naranja-resume{
     margin-bottom: 10px;
 }
-#resume03{
-    color: #b9cdd1;
+#celeste-resume{
     align-items: flex-end;
     transform: translateX(50%);
 }
@@ -531,14 +540,15 @@ h6{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 100%;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 .titulo h1{
-    color: #dfa36d;
     margin-left: 10px;
     margin-right: 10px;
+}
+.titulo img{
+    margin-bottom: 8px;
 }
 #boton-contacto{
     background-color: #acb884;
