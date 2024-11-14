@@ -17,9 +17,7 @@
 .titulo-pagina {
     font-family: Barbra;
     font-style: normal;
-    letter-spacing: 1px;
     font-size: 190%;
-    margin-bottom: 10px;
 }
 .color-verde{
     color: #acb884;
@@ -61,6 +59,29 @@ h6{
     font-weight: 600;
     font-size: 6.8px;
 }
+
+.etiqueta{
+    border-radius: 50px;
+    padding: 20px;
+    width: max-content;
+}
+.eti-blanca{
+    background-color:#f2ebd7;
+}
+.eti-amarilla{
+    background-color:#ffd07b;
+}
+.eti-naranja{
+    background-color: #dfa36d;
+}
+.eti-celeste{
+    background-color:#b9cdd1;
+}
+.eti-verde{
+    background-color: #acb884;
+}
+
+/* INDEX */
 .grid-index{
     display: grid;
     grid-template-areas: 
@@ -107,29 +128,6 @@ h6{
     text-decoration: none;
     color: #000000;
 }
-.etiqueta{
-    border-radius: 50px;
-    padding: 10px;
-    width: max-content;
-}
-.eti-blanca{
-    background-color:#f2ebd7;
-}
-.eti-amarilla{
-    background-color:#ffd07b;
-}
-.eti-naranja{
-    background-color: #dfa36d;
-}
-.eti-celeste{
-    background-color:#b9cdd1;
-}
-.eti-verde{
-    background-color: #acb884;
-}
-
-/* INDEX */
-
 #imagenes{
     grid-area: imagen;
     display: flex;
@@ -185,17 +183,6 @@ h6{
 }
 .text-overlay{
     transform: translateX(-20%);
-}
-#portfolio1{
-    color: #acb884;
-    margin-bottom: 10px;
-}
-#portfolio2{
-    color: #dfa36d;
-    margin-bottom: 10px;
-}
-#portfolio3{
-    color: #f2ebd7;
 }
 .estrella-circulo{
     width: auto;
@@ -515,7 +502,7 @@ h6{
 }
 /* fin RESUME */
 
-/* inicio TRABAJOS */
+/* TRABAJOS */
 .grid-trabajos{
     display: grid;
     grid-template-areas: 
@@ -584,19 +571,124 @@ h6{
     background-color: #acb884;
 }
 /* fin TRABAJOS */
-
-
 /* FIN Version Mobile */
 
+/* Version Desktop */
+@media screen and (min-width: 1200px){
+    .titulo-pagina {
+        font-size: 800%;
+    }
+    .grid-index{
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "emilia portfolio"
+        "scroll scroll"
+        "perfil contacto"
+        "footer footer";
+        grid-template-columns: repeat(2,1fr);
+    }
+    .header{
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+    .header div img{
+        width: auto;
+        height: 20px;
+    }
+    .header div h2{
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    .nav ul li a{
+        font-weight: 600;
+        font-size: 10px;
+        padding: 10px;
+        margin-left: 30px;
+    }
 
+    #imagenes{
+        grid-area: emilia;
+        margin-top: 80px;
+        justify-content: flex-end;
+    }
+    .emilia{
+        height: 100vh;
+        width: 550px;
+        border-top-right-radius: 300px;
+        border-top-left-radius: 300px; 
+        object-fit: cover 300px; 
+    }
+     #presentacion{
+        grid-area: portfolio;
+        width: max-content;
+        transform: translateX(0%);
+    }
+    .text-overlay{
+        transform: translateX(0%);
+        margin-top:50px;  
+        transform: translateY(30%);      
+    }
+    #portUno{
+        transform: translateY(-30%);
+    }
+    #portDos{
+        transform: translateY(-60%);
+    }
+    .redeSociales{
+        align-self: flex-end;
+        padding: 30px;
+        transform: translateY(0%);
+    }
+    /* #presentacion{
+        grid-area: texto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        z-index: 1; */
+        /* width: 25vw;
+        transform: translateX(-60%); */
+        /* .text-overlay{
+        transform: translateX(-20%);
+    } */
+    #scroll{
+        height: 150px;
+    }
+    #scroll img{
+        width: auto;
+        height: 90px;
+    }
+    h3{
+        font-weight: 500;
+        font-size: 18px;
+    }
+    h4{
+        font-weight: 400;
+        font-size: 15px;
+    }
+    p{
+        font-weight: 400;
+        font-size: 20px;
+    }
+    h6{
+        font-weight: 600;
+        font-size: 10px;
+    }
+}
 
+/* fin version Desktop */
 
+/* Version Tablet */
+@media screen and (min-width: 600px){
 
+}
 
-
+/* fin version Desktop */
 
 /* version DESKTOP DE LA LINEA DE TIEMPO
-
 .timeline{
     display: grid;
     grid-template-columns: 1, 1fr;
