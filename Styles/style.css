@@ -744,17 +744,13 @@ h6{
 
 
     #trabajos{
-        column-gap: 30px;
-        grid-template-rows: repeat(2, 1fr);
-        row-gap: 30px;
+        display: grid;
     }
     .imagen-trabajo{
         width: 300px;
         transform: translateY(-10%);
     }
-    .link-behance{
-        grid-area: trabajos;
-    }
+
 }    
 
 
