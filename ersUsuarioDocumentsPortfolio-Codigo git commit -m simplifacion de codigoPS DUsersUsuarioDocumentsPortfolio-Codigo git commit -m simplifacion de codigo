@@ -1,0 +1,156 @@
+[33mcommit 5451348a13a69a9ec6fa15437c59c3b757cc72f8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mversion1.3[m[33m, [m[1;31morigin/version1.3[m[33m, [m[1;32mversion2[m[33m)[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Fri Nov 15 09:29:22 2024 +0100
+
+    trabajos
+
+[33mcommit 034bc4cd32ea75b227cda249a80d978273230259[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Thu Nov 14 15:14:32 2024 +0100
+
+    trabajos
+
+[33mcommit f8bafdeaf98d6ca6776c2ce31df0a314a10d39c5[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Thu Nov 14 14:53:30 2024 +0100
+
+    index finish
+
+[33mcommit c8c5e8e1c3fa04966e99f3220a8cf6c5bf070397[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Thu Nov 14 10:38:03 2024 +0100
+
+    index desktop fin
+
+[33mcommit ef7bc6a8cd49e2130725a98c76f442ad0b1b78be[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Thu Nov 14 08:45:29 2024 +0100
+
+    desktop parte1
+
+[33mcommit fce06dc456bf0ea36163baaac2459b419467350f[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Merge: f437c34 df125cf
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Wed Nov 13 10:49:41 2024 +0100
+
+    simplifacion de codigo
+
+[33mcommit df125cf23aecb699de789861b8ce9587b6fb88d4[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Wed Nov 13 10:47:28 2024 +0100
+
+    ortografia
+
+[33mcommit 339662bca85b4b7c84262214a38f425118ad0b18[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Wed Nov 13 10:46:34 2024 +0100
+
+    simplificacion nav
+
+[33mcommit 62bc9c7fc0e836c1f2d059c4bdbb14000a0c10a1[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Wed Nov 13 10:38:24 2024 +0100
+
+    unificacion de etiquetas
+
+[33mcommit 4a5667508c5ef689285d71d4d5904f31b4aa5cd0[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Wed Nov 13 10:20:12 2024 +0100
+
+    color de titulos-clases
+
+[33mcommit 21039d1a7267ce09addc74a41c143062a5013ae4[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Wed Nov 13 10:04:51 2024 +0100
+
+    clase de textos-unificacion
+
+[33mcommit f437c340461f84314b6092151b5a106d80bd7257[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Wed Nov 13 09:10:43 2024 +0100
+
+    merge
+
+[33mcommit 8c547ee7d0eab8ef84fee1917676f90cb9cf59c9[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Wed Nov 13 09:08:07 2024 +0100
+
+    fondos
+
+[33mcommit f656708b8a7342178b0bbf624597f680a2093325[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Tue Nov 12 16:22:22 2024 +0100
+
+    trabajos
+
+[33mcommit 883119827f31722b790a536f6c6dfa3b59c390a0[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Tue Nov 12 14:03:05 2024 +0100
+
+    tipografias
+
+[33mcommit 8debc8cb8fa3a876b4804dd818eed458cf88cf67[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Tue Nov 12 13:39:24 2024 +0100
+
+    bordes
+
+[33mcommit d5f33d198364926bdecfbcd406cf04f4760ab8a4[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Tue Nov 12 13:31:48 2024 +0100
+
+    opticas
+
+[33mcommit a637082ed08bde164192ab585824c98b6c479342[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Tue Nov 12 13:25:23 2024 +0100
+
+    correcciones opticas
+
+[33mcommit 000946270047b1db20a8a81e32c0457378110a0a[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Tue Nov 12 13:22:55 2024 +0100
+
+    ajustes opticos
+
+[33mcommit d8634cc344d388c2a820be12a8f241ccef9a5fe6[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Tue Nov 12 12:03:47 2024 +0100
+
+    correccion de links
+
+[33mcommit f75a089b1139a315ecf54a4269033eb18edffb94[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Tue Nov 12 11:21:32 2024 +0100
+
+    coreccion de href de styles
+
+[33mcommit 0be05a7965f74813f088b2d297d07006f6bafbee[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Tue Nov 12 11:19:37 2024 +0100
+
+    style en index y resume
+
+[33mcommit 6f6438c00265555106e03a56666bfb7a758487fd[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Tue Nov 12 11:17:43 2024 +0100
+
+    agregar codigo en resume
+
+[33mcommit 4d231d0918e7f352526098ec66886d04db25de8a[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Tue Nov 12 11:13:37 2024 +0100
+
+    agregue paginas a mi sitio en version1.0
+
+[33mcommit 9fac66dcfd51e894845a0cac4e8aea6946296869[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Tue Nov 12 11:04:47 2024 +0100
+
+    codigo index
+
+[33mcommit 1d64ef14db4b1861ae392719985d1691efb7e947[m
+Author: Emilia Ingaramo <emiliaingaramo@gmail.com>
+Date:   Tue Nov 12 10:52:45 2024 +0100
+
+    agregado de index y style
