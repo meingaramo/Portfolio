@@ -741,6 +741,36 @@ h6{
         padding: 10px;
     }
 
+    .grid-resume{
+        display: grid;
+        grid-template-areas:
+        "none resume"
+        "educacion resume"
+        "educacion skills"
+        "experiencia skills"
+        "experiencia idiomas"
+        "experiencia interes";
+        grid-template-rows: 1fr 1fr 2fr 2fr 2fr 2fr;
+    }
+    .resume{
+        grid-row: 1 / 2;
+    }
+    .educacion{
+        grid-row: 2 / 3;
+    }
+    .experiencia{
+        grid-row: 4 / 6;
+    }
+    #skill{
+        grid-row: 3 / 4;
+    }
+    #idiomas{
+        grid-row: 5;
+    }
+    #intereses{
+        grid-row: 6;
+    }
+    
     .trabajos{
         justify-content: center;
         align-items: center;
