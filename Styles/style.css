@@ -748,7 +748,8 @@ h6{
     .ejemplos{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 35px;
+        justify-content: center;
+        align-items: center;
     }
     .imagen-trabajo{
         width: 300px;
