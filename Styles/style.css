@@ -84,9 +84,9 @@ h6{
 /* INDEX */
 .grid-index{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "header header"
-    "imagen texto" /*imagenes - text-overlay */ /*educacion*/ 
+    "imagen texto" /*imagenes - text-overlay */ /*educacion*/
     "scroll scroll" /*scroll*/ /*experiencia de trabajo */
     "perfil perfil" /*perfil-contenedor */ /*experiencia de trabajo */
     "contacto contacto" /* imagen-contenedor */ /* skill idioma interes */
@@ -97,7 +97,7 @@ h6{
     grid-area: header;
     display: flex;
     justify-content: space-between;
-    height: 60px;  
+    height: 60px;
     align-items: flex-end;
 }
 .header div{
@@ -147,7 +147,7 @@ h6{
     object-position: 45% 100%;
     border-top-right-radius: 150px;
     border-top-left-radius: 150px;
-    transform: translateX(10%); 
+    transform: translateX(10%);
 }
 #imagenes-extras{
     position: absolute;
@@ -202,7 +202,7 @@ h6{
     grid-area: scroll;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;    
+    align-items: center;
     justify-items: center;
     background-color: #acb884;
     height: 80px;
@@ -216,7 +216,7 @@ h6{
     color: #f2ebd7;
 }
 
-.perfil-contenedor {
+#perfil-contenedor {
     background-color:#f2ebd7;
     grid-area: perfil;
     display: flex;
@@ -226,12 +226,12 @@ h6{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.perfil-contenedor img{
+#perfil-contenedor img{
     width: auto;
     height: 100px;
     padding-bottom: 15px;
 }
-.perfil-contenedor p{
+#perfil-contenedor p{
     max-width: 70vw;
     color: #000000;
     text-align: center;
@@ -295,7 +295,7 @@ h6{
 /* RESUME */
 .grid-resume{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "header"
     "resume"
     "educacion"
@@ -304,7 +304,8 @@ h6{
     "idiomas"
     "interes"
     "footer";
-    background-color: #f2ebd7;
+    background: linear-gradient(to bottom, #f2ebd7 50%, #b9cdd1 50%);
+    margin: 0;
 }
 .resume{
     grid-area: resume;
@@ -330,9 +331,9 @@ h6{
     flex-direction: column;
     margin-top: 15px;
 }
-.educacion-container{
+/* .educacion-container{
     display: flex;
-}
+} */
 #timeline{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -387,7 +388,7 @@ h6{
 .timeline-item-exp{
     display: grid;
     grid-template-columns: 30px 20px auto;
-} 
+}
 .timeline-dot-exp{
     display: flex;
     flex-direction: column;
@@ -414,12 +415,8 @@ h6{
     display: flex;
     justify-content: space-around;
 }
-
 .orden-etiquetas h6{
     color: #919b68;
-}
-#fondo-azul{
-    background-color: #b9cdd1;
 }
 #skills{
     grid-area: skills;
@@ -443,7 +440,7 @@ h6{
 
 #etiquetas-amarillas{
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     margin-left: 5px;
     margin-top: 10px;
 }
@@ -504,7 +501,7 @@ h6{
 /* TRABAJOS */
 .grid-trabajos{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "header"
     "titulo"
     "trabajos"
@@ -622,7 +619,7 @@ h6{
         width: 550px;
         border-top-right-radius: 300px;
         border-top-left-radius: 300px;
-        align-self: flex-end; 
+        align-self: flex-end;
     }
     #presentacion{
         grid-area: portfolio;
@@ -631,8 +628,8 @@ h6{
     }
     .text-overlay{
         transform: translateX(0%);
-        margin-top:50px;  
-        transform: translateY(30%);      
+        margin-top:50px;
+        transform: translateY(30%);
     }
     #portUno{
         transform: translateY(-30%);
@@ -681,19 +678,22 @@ h6{
         width: auto;
         height: 90px;
     }
-    .perfil-contenedor{
+    #scroll a{
+        text-decoration: none;
+    }
+    #perfil-contenedor{
         grid-area: perfil;
         padding-top: 100px;
         padding-left: 190px;
         padding-bottom: 100px;
         align-items: flex-start;
     }
-    .perfil-contenedor img{
+    #perfil-contenedor img{
         height: 200px;
         padding-bottom: 15px;
         margin-left: 150px;
     }
-    .perfil-contenedor p{
+    #perfil-contenedor p{
         text-align: left;
         margin-left: 150px;
     }
@@ -721,6 +721,9 @@ h6{
     #info-contacto p {
         font-size: 16px;
     }
+    h2{
+        font-size: 40px;
+    }
     h3{
         font-weight: 500;
         font-size: 18px;
@@ -734,8 +737,8 @@ h6{
         font-size: 20px;
     }
     h6{
-        font-weight: 600;
-        font-size: 10px;
+        font-weight: 400;
+        font-size: 13px;
     }
     .iconoSocial{
         padding: 10px;
@@ -744,33 +747,133 @@ h6{
     .grid-resume{
         display: grid;
         grid-template-areas:
+        "header header"
         "none resume"
         "educacion resume"
         "educacion skills"
         "experiencia skills"
         "experiencia idiomas"
-        "experiencia interes";
-        grid-template-rows: 1fr 1fr 2fr 2fr 2fr 2fr;
+        "experiencia interes"
+        "footer footer";
+    }
+    .diseno{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+    .diseno img{
+        width: 300px;
+        height: auto;
     }
     .resume{
-        grid-row: 1 / 2;
+        margin-right: 75px;
+    }
+    #verde-resume{
+        font-size: 500%;
+        transform: translateX(0%);
+        align-self: flex-start;
+    }
+    #naranja-resume{
+        font-size: 500%;
+    }
+    #celeste-resume{
+        font-size: 500%;
+        transform: translateX(0%);
+        align-self: flex-end;
     }
     .educacion{
-        grid-row: 2 / 3;
+        margin-left: 75px;
+        margin-bottom: 90px;
+    }
+    .educacion h2{
+        padding-bottom: 20px;
+    }
+    #timeline{
+        display: grid;
+        grid-template-columns: none;
+        margin-bottom: 20px;
+    }
+    .timeline-item{
+        display: grid;
+        grid-template-columns: 55px 20px auto;
+    }
+    .timeline-dot{
+        flex-direction: column;
+        padding-left: 5px;
+        padding-right: 15px;
+    }
+    .timeline-dot img{
+        margin-bottom: 5px;
+    }
+    .timeline-dot hr{
+        height: 25px;
+        padding-top: 20px;
+        margin: 0px;
+        width: 1px;
+        background-color: #acb884;
+    }
+    .notDesktop{
+        display: none;
     }
     .experiencia{
-        grid-row: 4 / 6;
+        margin: 0px 35px 0px 75px;
+        padding: 40px;
+        transform: translateY(-10%);
     }
-    #skill{
-        grid-row: 3 / 4;
+    .experiencia h2{
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    #timeline-experiencia{
+        margin-bottom: 40px;
+    }
+    .timeline-item-exp{
+        grid-template-columns: 60px 30px 350px;
+    }
+    .timeline-dot-exp{
+        padding-right: 15px;
+    }
+    .timeline-dot-exp hr{
+        height: 45px;
+    }
+    .estrella-amarilla-exp{
+        width: 50px;
+        transform: translateY(-300%);
+        margin-left: 400px;
+    }
+    .orden-etiquetas{
+        display: grid;
+        justify-content: flex-start;
+        grid-template-columns: repeat(2, 0fr);
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    #etiquetas-amarillas{
+        display: grid;
+        grid-template-columns: repeat(3, 0fr);
+        row-gap: 10px;
+        column-gap: 10px;
+        justify-content: start;
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+    #fondo-azul{
+        background: unset;
+    }
+    #skills{
+        margin-right: 75px;
+        padding-top: 0px;
+        margin-top: 40px;
     }
     #idiomas{
-        grid-row: 5;
+        margin-right: 75px;
+        transform: translateY(-20%);
     }
     #intereses{
-        grid-row: 6;
+        margin-right: 75px;
+        transform: translateY(-10%);
     }
-    
     .trabajos{
         justify-content: center;
         align-items: center;
@@ -786,12 +889,7 @@ h6{
         transform: translateY(-10%);
     }
 
-}    
-
-
-
-
-
+}
 /* fin version Desktop */
 
 /* Version Tablet */
@@ -799,7 +897,7 @@ h6{
 
 }
 
-/* fin version Desktop */
+/* fin version TABLET */
 
 /* version DESKTOP DE LA LINEA DE TIEMPO
 .timeline{
