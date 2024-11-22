@@ -307,6 +307,9 @@ h6{
     background: linear-gradient(to bottom, #f2ebd7 50%, #b9cdd1 50%);
     margin: 0;
 }
+.diseno{
+    display: none;
+}
 .resume{
     grid-area: resume;
     display: flex;
