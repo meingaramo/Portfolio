@@ -207,6 +207,9 @@ h6{
     background-color: #acb884;
     height: 80px;
 }
+#scroll a{
+    text-decoration: none;
+}
 #scroll img{
     width: 60px;
     height: 60px;
@@ -680,9 +683,6 @@ h6{
     #scroll img{
         width: auto;
         height: 90px;
-    }
-    #scroll a{
-        text-decoration: none;
     }
     #perfil-contenedor{
         grid-area: perfil;
