@@ -10,9 +10,9 @@
     font-family: CHAVTER;
     src: url(../Fonts/CHAVTER.ttf);
 }
-*{
+/* *{
     border: solid 2px #ff0000;
-}
+} */
 
 .titulo-pagina {
     font-family: Barbra;
@@ -337,17 +337,12 @@ h6{
     flex-direction: column;
     margin-top: 15px;
 }
-/* .educacion-container{
-    display: flex;
-} */
 #timeline{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    justify-content: space-between;
-    padding: 5px 5px 5px 30px;
-}
-#timeline-titulo{
-    margin-right: 8px;
+    grid-template-columns: repeat(4,0fr);
+    column-gap: 8px;
+    justify-content: space-around;
+    padding: 5px 20px 5px 20px;
 }
 .timeline-dot{
     display: flex;
@@ -449,6 +444,7 @@ h6{
     display: flex;
     flex-wrap: wrap;
     max-width: 70vw;
+    row-gap: 5px;
     margin-top: 10px;
     margin-left: 25px;
 }
