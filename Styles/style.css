@@ -10,9 +10,9 @@
     font-family: CHAVTER;
     src: url(../Fonts/CHAVTER.ttf);
 }
-/* *{
+*{
     border: solid 2px #ff0000;
-} */
+}
 
 .titulo-pagina {
     font-family: Barbra;
@@ -372,6 +372,7 @@ h6{
     margin: 0px 35px 0px 35px;
     padding: 20px;
     height: max-content;
+    max-width: 70vw;
     transform: translatey(10%);
 }
 .experiencia h2{
@@ -419,7 +420,9 @@ h6{
 }
 .orden-etiquetas{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    align-items: flex-start;
 }
 .orden-etiquetas h6{
     color: #919b68;
@@ -430,7 +433,6 @@ h6{
 }
 #habilidades{
     display: flex;
-    flex-direction: row;
     column-gap: 50px;
     margin-left: 20px;
     margin-top: 10px;
@@ -443,14 +445,13 @@ h6{
     max-width: 40vw;
     margin-left: 20px;
 }
-
 #etiquetas-amarillas{
     display: flex;
-    justify-content: center;
-    margin-left: 5px;
+    flex-wrap: wrap;
+    max-width: 70vw;
     margin-top: 10px;
+    margin-left: 25px;
 }
-
 #idiomas{
     grid-area: idiomas;
     padding-top: 30px;
@@ -864,6 +865,15 @@ h6{
         margin-right: 75px;
         padding-top: 0px;
         margin-top: 40px;
+    }
+    #programas{
+        display: grid;
+        grid-template-columns: repeat(4,0fr);
+        row-gap: 15px;
+    }
+    #software img {
+        width: 45px;
+        padding-right: 10px;
     }
     #idiomas{
         margin-right: 75px;
